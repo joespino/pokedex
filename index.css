@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, serif;
+    margin: 0;
+}
+
+.header {
+    padding: 10px;
+    text-align: justify;
+    background: antiquewhite;
+    font-size: 20px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    border-top: 1px solid black;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+th {
+    color: blue;
+}
+
+td, th {
+    font-size: small;
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+}
+
+button {
+    text-align: center;
+    background-color: dodgerblue;
+    color: white;
+    border: 0;
+    width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
